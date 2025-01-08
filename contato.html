@@ -11,26 +11,38 @@
     />
     <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
     <title>Julia Pinheiro</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body>
     <header>
-      <h1>Contato</h1>
-      <nav>
-        <ul id="menu">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="contato.html">Contato</a></li>
-        </ul>
-      </nav>
+      <div id="header_content">
+        <h1>Julia Pinheiro</h1>
+        <nav>
+          <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <h2>Formulário de Contato</h2>
+      <section id="about">
+        <h2>Sobre Mim</h2>
+        <div id="conteudo">
+          <p>
+            Boas-vindas ao meu portfólio Sou desenvolvedora frontend com foco em
+            React.js
+          </p>
+        </div>
+      </section>
+
       <section id="contact">
+        <h2>Formulário de Contato</h2>
         <form action="#" method="post">
           <fieldset>
             <legend>Informações Pessoais</legend>
-            <label for="nome">Nome:</label>
             <input
               id="nome"
               type="text"
@@ -39,7 +51,6 @@
               required
             />
             <span id="txtNome"></span>
-            <label for="email">Email:</label>
             <input
               id="email"
               type="email"
@@ -50,8 +61,6 @@
             <span id="txtEmail"></span>
           </fieldset>
           <fieldset>
-            <legend>Mensagem</legend>
-            <label for="subject">Assunto:</label>
             <input
               id="subject"
               type="text"
@@ -72,7 +81,7 @@
         </form>
       </section>
 
-      <section id="mapa">
+      <section id="map">
         <h2>Localização</h2>
         <div id="endereco">
           <p>Av. Paulista, 100</p>
@@ -110,7 +119,7 @@
           <img src="assets/img/instagram.svg" alt="Ícone do Instagram" />
         </a>
       </section>
-      <h3>Feito com 🧡 por Generation Brasil e Julia Pinheiro - 2025</h3>
+      <h3>Feito com 💚 por Generation Brasil e Julia Pinheiro - 2025</h3>
     </footer>
   </body>
 </html>

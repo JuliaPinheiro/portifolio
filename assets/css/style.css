@@ -1,0 +1,203 @@
+:root {
+  --green-military: #4b5320;
+  --green-light: #a3b18a;
+  --beige: #f5f5dc;
+  --white: #ffffff;
+  --black: #1a1a1a;
+  --hover-color: #738878;
+  --font-family-main: 'Arial', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-main);
+  background-color: var(--beige);
+  color: var(--black);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  background-color: var(--green-military);
+  color: var(--white);
+  padding: 1rem 0;
+}
+
+#header_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin: 0 1rem;
+}
+
+.menu li a {
+  color: var(--white);
+  font-weight: bold;
+}
+
+.menu li a:hover {
+  color: var(--beige);
+}
+
+#about {
+  padding: 2rem 1rem;
+  background-color: var(--green-light);
+  text-align: center;
+}
+
+#about h2 {
+  color: var(--green-military);
+}
+
+#conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#sobre_texto p {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#video {
+  padding: 2rem 1rem;
+  background-color: var(--beige);
+  text-align: center;
+}
+
+#video h2 {
+  color: var(--green-military);
+}
+
+#youtube iframe {
+  border: 4px solid var(--green-light);
+  border-radius: 10px;
+}
+
+footer {
+  background-color: var(--green-military);
+  color: var(--white);
+  padding: 1rem 0;
+  text-align: center;
+}
+
+#redes_sociais a {
+  margin: 0 0.5rem;
+}
+
+#redes_sociais img {
+  width: 32px;
+  height: 32px;
+}
+
+footer h3 {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: var(--beige);
+}
+
+#contact {
+  padding: 2rem 1rem;
+  background-color: var(--green-light);
+  text-align: center;
+}
+
+#contact h2 {
+  color: var(--green-military);
+}
+
+
+form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+form legend {
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+
+form {
+  background-color: #f1f1f1; 
+  padding: 2rem;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto; 
+}
+
+form label {
+  font-weight: bold; /
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid var(--green-military); 
+  border-radius: 5px; 
+  font-size: 1rem;
+  margin-bottom: 1rem; 
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border: 1px solid var(--hover-color); 
+}
+
+#personal-info,
+#message {
+  text-align: center;
+}
+
+form button {
+  background-color: var(--green-military);
+  color: var(--white);
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+form button:hover {
+  background-color: var(--hover-color);
+}
